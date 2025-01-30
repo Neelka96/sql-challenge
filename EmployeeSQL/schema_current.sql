@@ -1,8 +1,6 @@
 ﻿-- SCHEMA SETUP:
 	-- Link to QuickDBD https://app.quickdatabasediagrams.com/#/d/kPTMJY
 
--- SET datestyle = 'MDY';
-
 CREATE TABLE departments (
    dept_no       CHAR(4)        NOT NULL
    ,dept_name    VARCHAR(19)    NOT NULL
