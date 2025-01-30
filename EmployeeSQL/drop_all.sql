@@ -1,3 +1,5 @@
+-- Drop all tables
+
 DROP TABLE IF EXISTS salaries CASCADE;
 DROP TABLE IF EXISTS dept_manager CASCADE;
 DROP TABLE IF EXISTS dept_emp CASCADE;
