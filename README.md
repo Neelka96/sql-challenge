@@ -7,15 +7,15 @@
 ## Table of Contents  
 1. [Introduction](#introduction)  
 2. [Challenge Overview](#challenge-overview)  
-3. [Entity Relationship Diagram](#entity-relationship-diagram-erd)
+3. [Entity Relationship Diagram](#entity-relationship-diagram-erd)  
 4. [Variables/Breakdowns](#variablesbreakdowns)  
     - [Relevant Variables](#relevant-variables)  
     - [Summary Breakdowns](#summary-breakdowns)  
 5. [Setup and Usage](#setup-and-usage)  
-    - [Prerequisites](#prerequisites)  
-    - [Instructions](#instructions)  
-6. [Files and Directory Structure](#files-and-directory-structure)  
-7. [Expected Results](#expected-results)  
+    - [Prerequisites & Instructions](#prerequisites--instructions)  
+    - [Directory Structure](#directory-structure)  
+    - [Schema](#schema)  
+6. [Queries](#queries)  
 
 
 ## Introduction  
@@ -27,10 +27,8 @@ For this project, you’ll design the tables to hold the data from the CSV files
 a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data  
 engineering, and data analysis, respectively.  
 
-[:arrow_up: Return to TOC](#table-of-contents)  
 
-
-## Challenge Overview 
+## Challenge Overview  
 {Paragraph 1 - Intro}
 {Module environment and summary of task at hand}
 {Data given, presentation, and wanted information}
@@ -51,7 +49,9 @@ engineering, and data analysis, respectively.
 
 ## Entity Relationship Diagram (ERD)  
 
-<img src="EmployeeSQL/ERD.jpg" alt="ERD_sql_challenge" width="1000" height="800">
+### sql-challenge_db DataBase Relationships  
+
+<img src="EmployeeSQL/ERD.jpg" alt="ERD_sql_challenge" width="1000" height="800">  
 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
@@ -94,29 +94,22 @@ engineering, and data analysis, respectively.
 
 
 ## Setup and Usage  
-### Prerequisites  
-- {Language Version}  
-- Standard libraries: (included with {Language})  
-- Non-standard library:  
-- {IDE Requirements}  
+### Prerequisites & Instructions  
+- Written in | **SQL:2023 (ISO/IEC 9075:2023)**  
+- DBMS used  | **PostgreSQL 17.2**  
 
-[:arrow_up: Return to TOC](#table-of-contents)  
+1. Install PostgreSQL if not already done (ensure version is compatible with *17.2*)  
+2. Clone this repository  
+3. Create DataBase sql-challenge_db if it doesn't exist  
+4. 
 
-
-### Instructions  
-1. Clone this repository.  
-2. Ensure IDE is up to date and running.  
-
-3. Ensure the input files are in the correct directory.  
-4. Open {main_file_name} in your IDE and {perform execution}.  
-5. {Where results are found}  
 > [!TIP]  
 > %%%  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
-## Files and Directory Structure  
+### Directory Structure  
 ```  
 sql-challenge/  
 |  
@@ -137,24 +130,15 @@ This structure ensures all inputs are organized within their respective folders.
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
-## Expected Results  
-1. Updated {main...}
-2. New directory structure for `{repo_name}`:
+### Schema
+
+
+[:arrow_up: Return to TOC](#table-of-contents)  
+
+
+## Queries  
+```sql
+
 ```
-{repo_name}/
-|
-|— {main_directory}/
-|   |— {input_directory}/
-|   |   — test1.csv
-|   |   - test2.csv
-|   |- {results_directory}/
-|   |   - result1.pdf
-|   |   - result2.png
-|   |   - result3.jpeg
-|   |   - result4.py
-|   |   - result5.ipynb
-|   |— main... (updated)
-```
-{New directory paths indicate proper running and exporting of data}
 
 [:arrow_up: Return to TOC](#table-of-contents)  
