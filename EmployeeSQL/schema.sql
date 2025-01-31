@@ -1,6 +1,13 @@
 ﻿-- SCHEMA SETUP:
 	-- Link to QuickDBD https://app.quickdatabasediagrams.com/#/d/kPTMJY
 
+DROP TABLE IF EXISTS departments CASCADE;
+DROP TABLE IF EXISTS titles CASCADE;
+DROP TABLE IF EXISTS employees CASCADE;
+DROP TABLE IF EXISTS dept_emp CASCADE;
+DROP TABLE IF EXISTS dept_manager CASCADE;
+DROP TABLE IF EXISTS salaries CASCADE;
+
 CREATE TABLE departments (
    dept_no       CHAR(4)        NOT NULL
    ,dept_name    VARCHAR(19)    NOT NULL
