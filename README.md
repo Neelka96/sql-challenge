@@ -95,7 +95,7 @@ engineering, and data analysis, respectively.
 
 ## Setup and Usage  
 ### Prerequisites & Instructions  
-- Written in  | **SQL:2023 (ISO/IEC 9075:2023)**  
+- Written in   | **SQL:2023 (ISO/IEC 9075:2023)**  
 - DBMS used | **PostgreSQL 17.2**  
 
 1. Install PostgreSQL if not already done (ensure version is compatible with *17.2*)  
