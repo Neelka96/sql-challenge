@@ -50,9 +50,8 @@ engineering, and data analysis, respectively.
 
 
 ## Entity Relationship Diagram (ERD)  
-<img src="EmployeeSQL/ERD.jpg" alt="Alt Text" width="300" height="200">
 
-![ERD For sql-challenge_db DataBase, created using QuickdrawDataBaseDiagrams](EmployeeSQL/ERD.jpg)
+<img src="EmployeeSQL/ERD.jpg" alt="ERD_sql_challenge" width="1000" height="800">
 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
