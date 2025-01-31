@@ -9,8 +9,8 @@ DROP TABLE IF EXISTS dept_manager CASCADE;
 DROP TABLE IF EXISTS salaries CASCADE;
 
 CREATE TABLE departments (
-   dept_no       CHAR(4)        NOT NULL
-   ,dept_name    VARCHAR(19)    NOT NULL
+   dept_no       CHAR(4)       NOT NULL
+   ,dept_name    VARCHAR(19)   NOT NULL
    ,CONSTRAINT pk_departments PRIMARY KEY (dept_no)
 );
 
@@ -23,7 +23,7 @@ CREATE TABLE titles (
 CREATE TABLE employees (
    emp_no        INT     	    NOT NULL
    ,emp_title_id CHAR(5)       NOT NULL
-   ,birth_date   DATE  			NOT NULL
+   ,birth_date   DATE  			 NOT NULL
    ,first_name   VARCHAR(15)   NOT NULL
    ,last_name    VARCHAR(17)   NOT NULL
    ,sex          CHAR(1)       NOT NULL
@@ -49,8 +49,8 @@ CREATE TABLE dept_manager (
 );
 
 CREATE TABLE salaries (
-   emp_no       INT     	   NOT NULL
-   ,salary      INT     	   NOT NULL
+   emp_no       INT     	    NOT NULL
+   ,salary      INT     	    NOT NULL
    ,CONSTRAINT pk_salaries PRIMARY KEY (emp_no)
    ,CONSTRAINT fk_salaries_emp_no FOREIGN KEY (emp_no) REFERENCES employees(emp_no)
 );
