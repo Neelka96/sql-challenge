@@ -16,6 +16,14 @@
     - [Directory Structure](#directory-structure)  
     - [Schema](#schema)  
 6. [Queries](#queries)  
+    - [Query 1](#query-1)  
+    - [Query 2](#query-2)  
+    - [Query 3](#query-3)  
+    - [Query 4](#query-4)  
+    - [Query 5](#query-5)  
+    - [Query 6](#query-6)  
+    - [Query 7](#query-7)  
+    - [Query 8](#query-8)  
 
 
 ## Introduction  
@@ -130,7 +138,7 @@ This structure ensures all inputs are organized within their respective folders.
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
-### Basic Schema  
+### Schema  
 **Main tables are...departments, titles, and employees**
 1. departments  
    - dept_no CHAR(4)  
