@@ -130,8 +130,31 @@ This structure ensures all inputs are organized within their respective folders.
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
-### Schema
-
+### Basic Schema  
+**Main tables are...departments, titles, and employees**
+1. departments  
+   - dept_no CHAR(4)  
+   - dept_name VARCHAR(18)  
+2. titles  
+   - title_id CHAR(5)  
+   - title VARCHAR(18)  
+3. employees  
+   - emp_no INT  
+   - emp_title_id CHAR(5)  
+   - birth_date DATE  
+   - first_name VARCHAR(14)  
+   - last_name VARCHAR(16)  
+   - sex CHAR(1)  
+   - hire_date DATE  
+4. dept_emp  
+   - emp_no INT  
+   - dept_no CHAR(4)  
+5. dept_manager  
+   - dept_no CHAR(4)  
+   - emp_no INT  
+6. salaries  
+   - emp_no INT  
+   - salary INT  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
