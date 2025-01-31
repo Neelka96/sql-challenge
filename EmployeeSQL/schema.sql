@@ -10,13 +10,13 @@ DROP TABLE IF EXISTS salaries CASCADE;
 
 CREATE TABLE departments (
    dept_no       CHAR(4)       NOT NULL
-   ,dept_name    VARCHAR(19)   NOT NULL
+   ,dept_name    VARCHAR(18)   NOT NULL
    ,CONSTRAINT pk_departments PRIMARY KEY (dept_no)
 );
 
 CREATE TABLE titles (
    title_id      CHAR(5)       NOT NULL
-   ,title        VARCHAR(20)   NOT NULL
+   ,title        VARCHAR(18)   NOT NULL
    ,CONSTRAINT pk_titles PRIMARY KEY (title_id)
 );
 
@@ -24,8 +24,8 @@ CREATE TABLE employees (
    emp_no        INT     	    NOT NULL
    ,emp_title_id CHAR(5)       NOT NULL
    ,birth_date   DATE  			 NOT NULL
-   ,first_name   VARCHAR(15)   NOT NULL
-   ,last_name    VARCHAR(17)   NOT NULL
+   ,first_name   VARCHAR(14)   NOT NULL
+   ,last_name    VARCHAR(16)   NOT NULL
    ,sex          CHAR(1)       NOT NULL
    ,hire_date    DATE		    NOT NULL
    ,CONSTRAINT pk_employees PRIMARY KEY (emp_no)
