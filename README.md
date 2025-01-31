@@ -96,15 +96,15 @@ engineering, and data analysis, respectively.
 ## Setup and Usage  
 ### Prerequisites & Instructions  
 - Written in | **SQL:2023 (ISO/IEC 9075:2023)**  
-- DBMS used  | **PostgreSQL 17.2**  
+- DBMS used | **PostgreSQL 17.2**  
 
 1. Install PostgreSQL if not already done (ensure version is compatible with *17.2*)  
 2. Clone this repository  
 3. Create DataBase sql-challenge_db if it doesn't exist  
-4. 
-
-> [!TIP]  
-> %%%  
+4. Connection to DataBase should be automatic, create a new `query tool window` or session  
+5. Run the `schema.sql` file in a query window to setup/restart tables  
+6. Import CSV Files from `sql-challenge_db/EmployeeSQL/data` directory into the corresponding tables
+7. Open the `queries.sql` file in a query window and run block-by-block (be sure to start with the `SET datestyle = 'Postgres, MDY';` line)
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -137,8 +137,169 @@ This structure ensures all inputs are organized within their respective folders.
 
 
 ## Queries  
-```sql
 
-```
+### Query 1  
+
+```sql  
+-- List the employee number, last name, first name, sex, and salary of each employee
+SELECT
+   e.emp_no
+   ,e.last_name
+   ,e.first_name
+   ,e.sex
+   ,s.salary
+FROM
+   employees e
+INNER JOIN
+   salaries s
+ON
+   e.emp_no = s.emp_no
+;
+```  
+
+### Query 2  
+
+```sql  
+-- List the first name, last name, and hire date for the employees who were hired in 1986.
+SELECT
+   first_name
+   ,last_name
+   ,hire_date
+FROM
+   employees
+WHERE
+   EXTRACT(YEAR FROM hire_date) = 1986
+;
+```  
+
+### Query 3  
+
+```sql  
+-- List the manager of each department along with their department number, department name, 
+-- employee number, last name, and first name.
+SELECT
+   m.dept_no
+   ,d.dept_name
+   ,m.emp_no
+   ,e.last_name
+   ,e.first_name
+FROM
+   dept_manager m
+INNER JOIN
+   departments d
+ON
+   m.dept_no = d.dept_no
+INNER JOIN
+   employees e
+ON
+   m.emp_no = e.emp_no
+;
+```  
+
+### Query 4  
+
+```sql  
+-- List the department number for each employee along with that employee’s employee number, 
+-- last name, first name, and department name.
+SELECT
+   de.dept_no
+   ,de.emp_no
+   ,e.last_name
+   ,e.first_name
+   ,d.dept_name
+FROM
+   dept_emp de
+INNER JOIN
+   employees e
+ON
+   de.emp_no = e.emp_no
+INNER JOIN
+   departments d
+ON
+   de.dept_no = d.dept_no
+;
+```  
+
+### Query 5  
+
+```sql  
+-- List first name, last name, and sex of each employee whose first name is Hercules and whose 
+-- last name begins with the letter B.
+SELECT
+   first_name
+   ,last_name
+   ,sex
+FROM
+   employees
+WHERE
+   first_name = 'Hercules' AND
+   last_name LIKE 'B%'
+;
+```  
+
+### Query 6  
+
+```sql  
+-- List each employee in the Sales department, including their employee number, last name, and 
+-- first name.
+SELECT
+   d.emp_no
+   ,e.last_name
+   ,e.first_name
+FROM
+   dept_emp d
+INNER JOIN
+   employees e
+ON
+   d.emp_no = e.emp_no
+WHERE 
+   d.dept_no = (
+   SELECT dept_no
+   FROM departments
+   WHERE dept_name = 'Sales')
+ORDER BY d.emp_no ASC
+;
+```  
+
+### Query 7  
+
+```sql  
+-- List each employee in the Sales and Development departments, including their employee number, 
+-- last name, first name, and department name.
+SELECT
+   de.emp_no
+   ,e.last_name
+   ,e.first_name
+   ,d.dept_name
+FROM
+   dept_emp de
+INNER JOIN
+   employees e
+ON
+   de.emp_no = e.emp_no
+INNER JOIN
+   departments d
+ON
+   de.dept_no = d.dept_no
+WHERE
+   d.dept_name = 'Sales' OR
+   d.dept_name = 'Development'
+;
+```  
+
+### Query 8
+
+```sql  
+-- List the frequency counts, in descending order, of all the employee last names 
+-- (that is, how many employees share each last name).
+SELECT
+   last_name
+   ,COUNT(last_name) frequency
+FROM
+   employees
+GROUP BY last_name
+ORDER BY frequency DESC
+;
+```  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
