@@ -1,6 +1,9 @@
 # MacOS Directory Arch. File
 .DS_Store
 
+# User-Defined Import SQL
+imports.sql
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
