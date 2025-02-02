@@ -83,19 +83,15 @@ engineering, and data analysis, respectively.
 
 ### Summary Breakdowns:  
 ```
-- {Setup}
-- {Cleanup}
-    - {Cleanup 1}
-    - {Cleanup 2}
-        - {Cleanup Sub 1}
-    - {Finish Cleanup}
-- {Summary}
-- {Summary}
-- {New Tables}
-    - {Charts}
-- {Regression}
-- {Analysis}
-    - {Conclusion}
+- Repository Creation and Directory Setup  
+- CSV/Pandas DataFrame Analysis of Data  
+- Entity Relationship Diagram  
+   - Conceptual Relationships  
+   - Logical Relationships  
+   - Physical Relationships  
+- Schema Setup/Initialization  
+- CSV File Imports (6) Into New Tables  
+- SQL Queries
 ```
 
 [:arrow_up: Return to TOC](#table-of-contents)  
