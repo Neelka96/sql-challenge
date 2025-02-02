@@ -59,7 +59,7 @@ engineering, and data analysis, respectively.
 
 ### sql-challenge_db DataBase Relationships  
 
-<img src="EmployeeSQL/ERD.jpg" alt="ERD_sql_challenge" width="1000" height="800">  
+<img src="EmployeeSQL/ERD.jpg" alt="ERD_sql_challenge" width="900" height="650">  
 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
@@ -140,13 +140,13 @@ This structure ensures all inputs are organized within their respective folders.
 
 ### Schema  
 **Main tables are: <ins>departments</ins>, <ins>titles</ins>, and <ins>employees</ins>**
-1. departments  
+1. <ins>departments</ins>  
    - dept_no CHAR(4)  
    - dept_name VARCHAR(18)  
-2. titles  
+2. <ins>titles</ins>  
    - title_id CHAR(5)  
    - title VARCHAR(18)  
-3. employees  
+3. <ins>employees</ins>  
    - emp_no INT  
    - emp_title_id CHAR(5)  
    - birth_date DATE  
