@@ -139,7 +139,7 @@ This structure ensures all inputs are organized within their respective folders.
 
 
 ### Schema  
-**Main tables are...departments, titles, and employees**
+**Main tables are: <ins>departments</ins>, <ins>titles</ins>, and <ins>employees</ins>**
 1. departments  
    - dept_no CHAR(4)  
    - dept_name VARCHAR(18)  
