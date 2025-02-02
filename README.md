@@ -27,12 +27,12 @@
 
 
 ## Introduction  
-It’s been two weeks since you were hired as a new data engineer at Pewlett Hackard (a fictional company).  
-Your first major task is to do a research project about people whom the company employed during the 1980s  
+It’s been two weeks since I was hired as a new data engineer at Pewlett Hackard (a fictional company).  
+My first major task is to do a research project about people whom the company employed during the 1980s  
 and 1990s. All that remains of the employee database from that period are six CSV files.  
 
-For this project, you’ll design the tables to hold the data from the CSV files, import the CSV files into  
-a SQL database, and then answer questions about the data. That is, you’ll perform data modeling, data  
+For this project, I have to design the tables to hold the data from the CSV files, import the CSV files  
+into a SQL database, and then answer questions about the data. That is, I'll perform data modeling, data  
 engineering, and data analysis, respectively.  
 
 
@@ -91,8 +91,8 @@ engineering, and data analysis, respectively.
    - Physical Relationships  
 - Schema Setup/Initialization  
 - CSV File Imports (6) Into New Tables  
-- SQL Queries
-```
+- SQL Queries  
+```  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -107,8 +107,8 @@ engineering, and data analysis, respectively.
 3. Create DataBase sql-challenge_db if it doesn't exist  
 4. Connection to DataBase should be automatic, create a new `query tool window` or session  
 5. Run the `schema.sql` file in a query window to setup/restart tables  
-6. Import CSV Files from `sql-challenge_db/EmployeeSQL/data` directory into the corresponding tables
-7. Open the `queries.sql` file in a query window and run block-by-block (be sure to start with the `SET datestyle = 'Postgres, MDY';` line)
+6. Import CSV Files from `sql-challenge_db/EmployeeSQL/data` directory into the corresponding tables  
+7. Open the `queries.sql` file in a query window and run block-by-block (be sure to start with the `SET datestyle = 'Postgres, MDY';` line)  
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -135,7 +135,7 @@ This structure ensures all inputs are organized within their respective folders.
 
 
 ### Schema  
-**Main tables are: <ins>departments</ins>, <ins>titles</ins>, and <ins>employees</ins>**
+**Main tables are: <ins>departments</ins>, <ins>titles</ins>, and <ins>employees</ins>**  
 1. <ins>departments</ins>  
    - dept_no CHAR(4)  
    - dept_name VARCHAR(18)  
