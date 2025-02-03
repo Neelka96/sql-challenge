@@ -4,6 +4,9 @@
 # User-Defined Import SQL
 imports.sql
 
+# Test with SQL Alchemy
+sql_alchemy.ipynb
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
