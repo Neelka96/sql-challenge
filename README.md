@@ -25,6 +25,10 @@
     - [Query 7](#query-7)  
     - [Query 8](#query-8)  
 
+> [!NOTE]  
+> All roleplaying instructions, rubric requirements, and Starter Code (with  
+> database and csv's) are provided by 2U/edX as part of their educational  
+> package provided with paid entry into the class.  
 
 ## Introduction  
 It’s been two weeks since I was hired as a new data engineer at Pewlett Hackard (a fictional company).  
