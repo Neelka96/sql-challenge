@@ -41,14 +41,19 @@ engineering, and data analysis, respectively.
 
 
 ## Challenge Overview  
-{Paragraph 1 - Intro}
-{Module environment and summary of task at hand}
-{Data given, presentation, and wanted information}
+This challenge is interesting in that the most difficult part was the overall Schema creation and data  
+modeling. While the querying was interesting, it didn't challenge my thinking the same was the schema  
+creation did, and likely because by doing that work I saved myself a lot of trouble when querying.  
 
-{Module environment for development and current execution, code language version/compiiler/IDE} 
-{Module dependencies/imports}
-{Method and process of solution}
-{Paragraph 2 - Summary}
+Through the completion of this challenge, I learned how strongly good data modeling depends on context.  
+Understanding how the data was decided to be inputted, whether more data will ever come in, and how  
+the relationships were envision when the data was originally written. Deciding whether those factors  
+are important and should be retained, whether they are erroneous/irrelevant, and what can be changed  
+to enhance database efficiency is what was truly challenging for me.
+
+{summary of task at hand}
+
+{Data given, presentation, and wanted information}
 
 {Paragraph 3 - Conclusion of overview}
 
