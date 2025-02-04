@@ -9,7 +9,7 @@
 2. [Challenge Overview](#challenge-overview)  
 3. [Entity Relationship Diagram](#entity-relationship-diagram-erd)  
 4. [Variables/Breakdowns](#variablesbreakdowns)  
-    - [Relevant Variables](#relevant-variables)  
+    - [Primary Keys](#primary-keys)  
     - [Summary Breakdowns](#summary-breakdowns)  
 5. [Setup and Usage](#setup-and-usage)  
     - [Prerequisites & Instructions](#prerequisites--instructions)  
@@ -70,16 +70,10 @@ engineering, and data analysis, respectively.
 
 
 ## Variables/Breakdowns  
-### Relevant Variables:  
+### Keys:  
 ```
-- DF_X  
-    - Variable_x_1  
-    - Variable_x_2  
-    - Variable_x_3  
-- DF_Y  
-    - Variable_y_1  
-    - Variable_y_2  
-    - Variable_y_3
+-- dept_no
+-- emp_no
 ```
 
 [:arrow_up: Return to TOC](#table-of-contents)  
