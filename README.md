@@ -8,9 +8,7 @@
 1. [Introduction](#introduction)  
 2. [Challenge Overview](#challenge-overview)  
 3. [Entity Relationship Diagram](#entity-relationship-diagram-erd)  
-4. [Variables/Breakdowns](#variablesbreakdowns)  
-    - [Primary Keys](#primary-keys)  
-    - [Summary Breakdowns](#summary-breakdowns)  
+4. [Summary Breakdowns](#summary-breakdowns)  
 5. [Setup and Usage](#setup-and-usage)  
     - [Prerequisites & Instructions](#prerequisites--instructions)  
     - [Directory Structure](#directory-structure)  
@@ -51,15 +49,6 @@ the relationships were envision when the data was originally written. Deciding w
 are important and should be retained, whether they are erroneous/irrelevant, and what can be changed  
 to enhance database efficiency is what was truly challenging for me.
 
-{summary of task at hand}
-
-{Data given, presentation, and wanted information}
-
-{Paragraph 3 - Conclusion of overview}
-
-> [!NOTE]  
-> 
-> 
 
 [:arrow_up: Return to TOC](#table-of-contents)  
 
@@ -74,17 +63,7 @@ to enhance database efficiency is what was truly challenging for me.
 [:arrow_up: Return to TOC](#table-of-contents)  
 
 
-## Variables/Breakdowns  
-### Keys:  
-```
--- dept_no
--- emp_no
-```
-
-[:arrow_up: Return to TOC](#table-of-contents)  
-
-
-### Summary Breakdowns:  
+## Summary Breakdowns:  
 ```
 - Repository Creation and Directory Setup  
 - CSV/Pandas DataFrame Analysis of Data  
